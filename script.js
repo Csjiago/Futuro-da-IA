@@ -33,7 +33,7 @@ alternativas:[
         enunciado: "Algoritmos de IA são usados apenas em filmes de ficção científica.",
 alternativas:["Verdadeiro", "Falso"],
 },
-{
+[
  
         enunciado: "A IA tem o potencial de automatizar algumas tarefas, o que pode impactar o futuro do trabalho.  ",
 alternativas:["Verdadeiro", "Falso"],
