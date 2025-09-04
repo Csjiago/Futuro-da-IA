@@ -13,13 +13,10 @@ const  perguntas = [
 
 },
 {
-
     enunciado: "A IA consegue ter sentimentos e emoções da mesma forma que os humanos.",
     alternativas: ["Verdadeiro", "Falso"],
-
 },
 {
-
     enunciado: "Carros autônomos, que dirigem sozinhos, são um exemplo de aplicação da IA?",
 alternativas:["Verdadeiro", "Falso"],
     
@@ -40,5 +37,28 @@ alternativas:["Verdadeiro", "Falso"],
  
         enunciado: "A IA tem o potencial de automatizar algumas tarefas, o que pode impactar o futuro do trabalho.  ",
 alternativas:["Verdadeiro", "Falso"],
-},
-{    
+
+      ]
+   },
+] 
+
+
+let atual = 0
+let perguntaAtual;
+
+ function mostraPerguntas() {
+ PerguntaAtual = pergunta[atual];
+ caixaPerguntas.textContent = perguntaAtual.enunciado;
+ mostraAlternativas();
+ }
+
+ function mostraAlternativas(){
+     for (const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas);
+     }
+    }
+
+
+    mostraPerguntas();
