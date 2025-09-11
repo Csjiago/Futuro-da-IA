@@ -43,11 +43,11 @@ alternativas:["Verdadeiro", "Falso"],
 ] 
 
 
-let atual = 0
+let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
- function mostraPerguntas() {
+ function mostraPergunta() {
  PerguntaAtual = perguntas[atual];
  caixaPerguntas.textContent = perguntaAtual.enunciado;
  mostraAlternativas();
