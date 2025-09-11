@@ -35,7 +35,7 @@ alternativas:["Verdadeiro", "Falso"],
 },
 [
  
-        enunciado: "A IA tem o potencial de automatizar algumas tarefas, o que pode impactar o futuro do trabalho.  ",
+        enunciado: "A IA tem o potencial de automatizar algumas tarefas, o que pode impactar o futuro do trabalho.",
 alternativas:["Verdadeiro", "Falso"],
 
       ]
@@ -46,6 +46,12 @@ alternativas:["Verdadeiro", "Falso"],
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
+
+function mostraPergunta(){
+if (atual >= perguntas.lenght){
+    mostraResultado();
+    return;
+}
 
  function mostraPergunta() {
  PerguntaAtual = perguntas[atual];
@@ -63,10 +69,16 @@ let historiaFinal = "";
     }
 
     function respostaSelecionada (opcaoSelecionada){
-     const afirmacoes = opcaoSelecionada.afirmacoes;
-     historiaFinal = afirmacoes;
+     const afirmacoes = opcaoSelecionada.afirmacao;
+     historiaFinal += afirmacoes + " ";
      atual++;
      mostraPerguntas();
+    }
+
+    function mostraResultado(){
+        caixaPerguntas.textContent = "pergunta";
+        textoResultado.textContent = historiaFinal;
+        caixaAlternativas.textContent = "Resposta";
     }
 
     mostraPerguntas();
