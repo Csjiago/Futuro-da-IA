@@ -50,6 +50,7 @@ if (atual >= perguntas.lenght){
     mostraResultado();
     return;
 }
+}
 
  function mostraPergunta() {
  PerguntaAtual = perguntas[atual];
