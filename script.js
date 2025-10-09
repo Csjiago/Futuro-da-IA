@@ -25,23 +25,21 @@ alternativas:["Verdadeiro", "Falso"],
 {
 
         enunciado: "MACHINE LEARNING é a capacidade de uma máquina aprender sem ser explicitamente programada para cada tarefa. ",
-alternativas:[
-   alternativas:["Verdadeiro", "Falso"],
+alternativas:["Verdadeiro", "Falso"],
 },
 {
 
         enunciado: "Algoritmos de IA são usados apenas em filmes de ficção científica.",
 alternativas:["Verdadeiro", "Falso"],
 },
-[
- 
+
+ {
         enunciado: "A IA tem o potencial de automatizar algumas tarefas, o que pode impactar o futuro do trabalho.",
 alternativas:["Verdadeiro", "Falso"],
 
-      ]
    },
-] 
 
+]
 
 let atual = 0;
 let perguntaAtual;

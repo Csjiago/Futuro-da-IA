@@ -29,7 +29,7 @@ h1{
 
 button hover {
  background-color; var(--cor-destaque);
- color. var(--cor-secundaria);
+ color: var(--cor-secundaria);
 }
 
 button {
