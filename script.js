@@ -82,3 +82,4 @@ if (atual >= perguntas.lenght){
     }
 
     mostraPerguntas();
+    
