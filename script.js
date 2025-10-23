@@ -51,7 +51,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = "01 - Verdadeiro\n02 - Falso\n03 - Verdadeiro\n04 - Verdadeiro\n05 - Falso\n06 - Verdadeiro";
 
 function mostraPergunta() {
    
