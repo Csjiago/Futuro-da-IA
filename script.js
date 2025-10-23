@@ -54,7 +54,7 @@ let perguntaAtual;
 let historiaFinal = "";
 
 function mostraPergunta() {
-    // Corrigido de .lenght para .length e chamada para mostraResultado()
+   
     if (atual >= perguntas.length) {
         mostraResultado();
         return;
@@ -66,28 +66,28 @@ function mostraPergunta() {
 }
 
 function mostraAlternativas() {
-    // Limpa as alternativas anteriores
+    
     caixaAlternativas.textContent = ""; 
 
     for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
-        // Acessa a propriedade 'texto'
+       
         botaoAlternativas.textContent = alternativa.texto; 
         
-        // Passa o objeto completo para a função
+        
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    // Acessa a propriedade 'afirmacao'
+    
     const afirmacoes = opcaoSelecionada.afirmacao; 
     historiaFinal += afirmacoes;
 
     atual++;
 
-    // Chamada corrigida para mostraPergunta()
+
     mostraPergunta();
 }
 
@@ -97,5 +97,5 @@ function mostraResultado() {
     caixaAlternativas.textContent = "";
 }
 
-// Chamada inicial corrigida para mostraPergunta()
+
 mostraPergunta();
